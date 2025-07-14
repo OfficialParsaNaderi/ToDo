@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/ToDo/components/ui/Card"
-import { Badge } from "@/ToDo/components/ui/badge"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card"
+import { Badge } from "@/components/ui/badge"
 import { Calendar, User, ExternalLink } from "lucide-react"
 
 import Link from "next/link"

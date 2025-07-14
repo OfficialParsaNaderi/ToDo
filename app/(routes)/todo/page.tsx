@@ -1,7 +1,7 @@
-import { HeaderState } from "@/ToDo/components/HeaderState";
-import { ProgressSummary } from "@/ToDo/components/ProgressSummary";
-import { TaskForm } from "@/ToDo/components/TaskForm";
-import { TaskList } from "@/ToDo/components/TaskList";
+import { HeaderState } from "@/components/HeaderState";
+import { ProgressSummary } from "@/components/ProgressSummary";
+import { TaskForm } from "@/components/TaskForm";
+import { TaskList } from "@/components/TaskList";
 
 export default async function ToDo() {
     return (

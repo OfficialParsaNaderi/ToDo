@@ -6,7 +6,7 @@ import { Label } from "@radix-ui/react-label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/ToDo/components/ui/Card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card"
 
 import { HandleAddTask, HandleUpdateTask } from "@/lib/actions";
 import type { Task } from "@/lib/database"

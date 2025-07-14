@@ -1,7 +1,7 @@
 // import ToDo from "./todo/page";
 
-import Robot from "@/ToDo/components/Robo";
-import ToDo from "@/ToDo/app/(routes)/todo/page";
+import Robot from "@/components/Robo";
+import ToDo from "@/app/(routes)/todo/page";
 
 export default function Home() {
     return (

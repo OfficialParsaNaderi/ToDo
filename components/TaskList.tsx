@@ -1,5 +1,5 @@
-import { TaskItem } from "@/ToDo/components/TaskItem";
-import { Card, CardContent } from "@/ToDo/components/ui/Card";
+import { TaskItem } from "@/components/TaskItem";
+import { Card, CardContent } from "@/components/ui/Card";
 
 import { HandleGetTasks } from "@/lib/actions";
 

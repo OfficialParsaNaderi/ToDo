@@ -1,10 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/ToDo/components/ui/button";
-import { Card, CardContent } from "@/ToDo/components/ui/Card";
-import { Checkbox } from "@/ToDo/components/ui/checkbox";
-import { Badge } from "@/ToDo/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/Card";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Badge } from "@/components/ui/badge";
 import { TaskForm } from "./TaskForm";
 
 import type { Task } from "@/lib/database";

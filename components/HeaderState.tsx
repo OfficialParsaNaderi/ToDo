@@ -1,4 +1,4 @@
-import { Badge } from "@/ToDo/components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 
 import { CheckCircle, Circle } from "lucide-react";
 import Link from "next/link";
