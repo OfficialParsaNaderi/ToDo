@@ -18,7 +18,7 @@ export async function HandleAddTask(formData: FormData) {
         throw new Error("Title is required");
     };
 
-    const db = getDatabase()
+    const db = getDatabase();
     const statement = db.prepare(`INSERT INTO tasks (title, description) VALUES (?,?)`);
 
     statement.run(title.trim(), description.trim() || null);
@@ -26,22 +26,22 @@ export async function HandleAddTask(formData: FormData) {
 };
 
 export async function HandleUpdateTask(id: number, formData: FormData) {
-    const title = formData.get("title") as string
-    const description = formData.get("description") as string
+    const title = formData.get("title") as string;
+    const description = formData.get("description") as string;
 
     if (!title.trim()) {
-        throw new Error("Title is required")
-    }
+        throw new Error("Title is required");
+    };
 
     const db = getDatabase()
     const statement = db.prepare(`
         UPDATE tasks 
         SET title = ?, description = ?, updated_at = CURRENT_TIMESTAMP 
         WHERE id = ?
-    `)
+    `);
 
-    statement.run(title.trim(), description.trim() || null, id)
-    revalidatePath("/")
+    statement.run(title.trim(), description.trim() || null, id);
+    revalidatePath("/");
 };
 
 export async function HandleToggleTaskComplete(id: number) {
@@ -50,11 +50,11 @@ export async function HandleToggleTaskComplete(id: number) {
         UPDATE tasks 
         SET completed = NOT completed, updated_at = CURRENT_TIMESTAMP 
         WHERE id = ?
-    `)
+    `);
 
-    statement.run(id)
-    revalidatePath("/")
-}
+    statement.run(id);
+    revalidatePath("/");
+};
 
 export async function HandleDeleteTask(id: number) {
     const db = getDatabase();

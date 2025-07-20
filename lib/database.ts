@@ -25,10 +25,10 @@ export function getDatabase() {
         insert.run("Foo", "Foo", 0)
         insert.run("Bar", "Bar", 1)
         insert.run("Baz", "Baz", 0)
-    }
+    };
 
     return db
-}
+};
 
 export interface Task {
     id: number
@@ -37,4 +37,4 @@ export interface Task {
     completed: boolean
     created_at: string
     updated_at: string
-}
+};
