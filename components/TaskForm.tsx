@@ -7,10 +7,9 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card"
-
 import { HandleAddTask, HandleUpdateTask } from "@/lib/actions";
-import type { Task } from "@/lib/database"
 
+import type { Task } from "@/lib/database"
 import { Plus, Save, X } from "lucide-react"
 
 interface TaskFormProps {
@@ -41,7 +40,7 @@ export function TaskForm({ task, onCancel }: TaskFormProps) {
     return (
         <>
             <div className="gird gap-0">
-                <Card className="">
+                <Card className="Card">
                     <CardHeader>
                         <CardTitle className="flex items-center justify-start">
                             {task ? <Save className="h-8 w-8 pr-2" /> : <Plus className="h-8 w-8 pr-2" />}
